@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="weather">
+                <span></span><br>
+                <span></span>
+            </div>
+            <div id="greeting" class="hidden"></div>
+        </div>
+    </header>
+    
+    <div class="today">
+        <div id="clock">00:00</div>
+        <div id="date"></div>
+
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="Please write your name">
+            <input type="submit" value="Log In">
+        </form>
+
+        <div id="todo" class="hidden">
+            <div>to-do list</div>
+            <div id="todos">
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do and Press Enter" required/>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    
+    
+    <script src="JS/greetings.js"></script>
+    <script src="JS/clocks.js"></script>
+    <script src="JS/qoutes.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/date.js"></script>
+</body>
+</html>

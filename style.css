@@ -1,0 +1,139 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: 'Noto Serif KR', serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+/*login*/
+
+
+/*after login*/
+.container {
+    display: flex;
+    justify-content:space-between;
+    color: white;
+}
+
+#weather {
+    margin: 10px 0 0 10px;
+}
+
+#greeting {
+    margin: 10px 10px 0 0;
+}
+
+.today {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#clock {
+    font-size: 100px;
+    font-weight: 800;
+}
+
+#date {
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#quote {
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#quote span:first-child {
+    display: block;
+}
+
+#login-form {
+    margin-top: 10px;
+}
+#login-form input:first-child {
+    border: none;
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    background: transparent;
+    color: white;
+    height: 20px;
+}
+#login-form input:first-child::placeholder {
+    color: white;
+    font-size: 15px;
+}
+#login-form input:first-child:focus {
+    outline: none;
+}
+
+#login-form input:last-child {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 20px;   
+    font-size: 15px;
+}
+
+#todo div:first-child {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#todos {
+    background-color: rgba(220, 225, 255, 0.103);
+    height: 350px;
+    text-align: left;
+}
+
+#todo-form input{
+    margin: 10px 0 0 10px;
+    opacity: 90%;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 1.5px solid white;
+    width: 400px;
+    height:25px;
+}
+#todo-form input::placeholder{
+    color: white;
+}
+#todo-form input:focus {
+    outline: none;
+}
+
+#todo-list {
+    list-style: none;
+    text-align: left;
+    padding-left: 10px;
+}
+#todo-list button {
+    background-color: transparent;
+    border: 0;
+}
